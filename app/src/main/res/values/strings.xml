@@ -1,0 +1,198 @@
+<resources>
+    <string name="app_name">سهالات</string>
+    <string name="home">Home</string>
+    <string name="account">Profile</string>
+    <string name="guid">Guide</string>
+    <string name="not">Chat</string>
+    <string name="va">Favourite</string>
+
+    <!--<-->
+    <string name="notification_text">Tracking, tap to cancel</string>
+    <string name="transport_id" translatable="false">123</string>
+    <string name="firebase_path" translatable="false">locations</string>
+    <string name="firebase_email" translatable="false">test@example.com</string>
+    <string name="firebase_password" translatable="false">password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="chat">Chat</string>
+    <string name="chat2">Notification</string>
+    <string name="cal">Call</string>
+    <string name="oreder">Request order</string>
+    <string name="orederactive">Active request order</string>
+    <string name="pro">Edit profile</string>
+    <string name="accoun">profile</string>
+    <string name="name">first name / last name</string>
+    <string name="pho">Phone</string>
+    <string name="pass">Password</string>
+    <string name="work">Occupation</string>
+    <string name="site">Email</string>
+    <string name="des">Tell about your work</string>
+    <string name="search">Search by name , activity ,region,</string>
+    <string name="commet">Comments</string>
+    <string name="hintcomment">Write your comment here</string>
+    <string name="commentt">Add comment</string>
+    <string name="email">Email</string>
+    <string name="passs">Enter password</string>
+    <string name="getpass"><u>Do you forget password?</u></string>
+    <string name="login">Login</string>
+    <string name="registernow"><u>Do not have Account?, register</u></string>
+    <string name="client">Client</string>
+    <string name="menhy">professional</string>
+    <string name="createa">Create account</string>
+    <string name="emailtogetpass">Write email address</string>
+    <string name="getpaass">Reset password</string>
+    <string name="loc">enter password</string>
+    <string name="commerc">Business Activities</string>
+    <string name="person">Personal Accounts</string>
+    <string name="locat">detect location</string>
+    <string name="write_here">iMessage</string>
+    <string name="click_here_to_download_files">click_here_to_download_files</string>
+
+    <string name="friend_time_ago">ago</string>
+    <string name="friend_time_year">Year</string>
+    <string name="friend_time_years">Years</string>
+    <string name="friend_time_and_month">and month</string>
+    <string name="friend_time_and">and</string>
+    <string name="friend_time_months">Months</string>
+    <string name="friend_time_month">Month</string>
+    <string name="friend_time_and_day">and Day</string>
+    <string name="friend_time_days">Days</string>
+    <string name="friend_time_aday">A Day</string>
+    <string name="friend_time_and_hour">And Hour</string>
+    <string name="friend_time_hours">Hours</string>
+    <string name="friend_time_hour">Hour</string>
+    <string name="friend_time_minutes">Minutes</string>
+    <string name="friend_time_minute">Minute</string>
+    <string name="friend_time_seconds">Seconds</string>
+    <string name="friend_time_about_second">About Second</string>
+    <string name="friend_time_about">About</string>
+    <string name="notti">الإشعارات</string>
+    <string name="Occupation">Occupation</string>
+    <string name="region">Region</string>
+    <string name="PleaseWait">Please wait...</string>
+    <string name="empty">empty filed</string>
+    <string name="emailAlreadyTaken">Email registered before</string>
+    <string name="phoneAlreadyTaken">Phone registered before</string>
+    <string name="followers">Followers</string>
+    <string name="editProfile">Edit profile</string>
+    <string name="changeToMahni">Upgrade to a profession</string>
+    <string name="update">Update</string>
+    <string name="commentAddedSuccessfully">Comment added successfully</string>
+    <string name="youAddedRateBefore">You have been added rate before</string>
+    <string name="setting">Setting</string>
+    <string name="language">Language</string>
+    <string name="terms">Terms and condition</string>
+    <string name="logout">Logout</string>
+    <string name="deletAccount">Delete account</string>
+    <string name="gallary">Gallery</string>
+    <string name="video">Video</string>
+    <string name="camera">Camera</string>
+    <string name="next">Next</string>
+    <string name="share">Share</string>
+    <string name="newPost">New post</string>
+    <string name="writeExplain">Write an explanation</string>
+    <string name="addLocation">Add location</string>
+    <string name="loginRegisterFirst">Please login or register first</string>
+    <string name="loginRegister">Login /register</string>
+    <string name="phone">Phone</string>
+    <string name="postAddedSuccessfully">Post added successfully</string>
+    <string name="profile">Profile</string>
+    <string name="location">Location</string>
+    <string name="follow">Follow</string>
+    <string name="comments">Comments</string>
+    <string name="yoFollowThisProfession">You follow this profession</string>
+    <string name="showComments">Show Comments</string>
+    <string name="postDetails">Post details</string>
+    <string name="youAddedCommentSuccessfully">You added comment successfully</string>
+    <string name="add">Add</string>
+    <string name="follower">Follower</string>
+    <string name="youUnFollowThisUser">You unfollow this user successfully</string>
+    <string name="followFirst">You must follow the professions first to see his posts</string>
+    <string name="posts">Posts</string>
+    <string name="following">Following</string>
+    <array name="attach_list">
+        <item>Image</item>
+        <item>File</item>
+    </array>
+    <string name="title_activity_map_user_track">Map</string>
+    <string name="cancel">Cancel</string>
+    <string name="removeFollowing">Remove follow</string>
+    <string name="noInternetMsg">No internet connection please try again later</string>
+    <string name="pleasShotApic">Please take a photo</string>
+    <string name="chooseLanguage">Choose Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="confirm">Confirm</string>
+    <string name="aboutUS">About us</string>
+    <string name="chooseImage">Choose image</string>
+    <string name="description">Description</string>
+    <string name="confirmMail">Confirm Phone</string>
+    <string name="confirmationSend">Confirmation code sent to your phone please write code to confirm</string>
+    <string name="errorCode">Error code please enter the correct one</string>
+    <string name="noCahtResult">No chat result</string>
+    <string name="noPostst">This professional did not add any pos</string>
+    <string name="whereSearch">Where you want to search</string>
+    <string name="forgetPass">Forget password</string>
+    <string name="ResetPassword">Reset Password</string>
+    <string name="PleaseAddPhone">Please add phone number</string>
+    <string name="country">Country</string>
+    <string name="sendCode">Send code</string>
+    <string name="notification">Sahlat Notification</string>
+    <string name="professionNearByYou">The professional is close to you now</string>
+    <string name="unFollow">UnFollow</string>
+    <string name="enterCode">Enter Code</string>
+    <string name="newPassword">New password</string>
+    <string name="confirmNewPAss">Confirm new password</string>
+    <string name="passwordNotMatch">Password not match</string>
+    <string name="delete">Delete</string>
+    <string name="errorWebSite">Error website</string>
+    <string name="updateInformation">Edit data</string>
+    <string name="changePhoto">Change photo</string>
+    <string name="pickPhoto">Pick photo</string>
+    <string name="noNotification">No notification till now</string>
+    <string name="Ok">Ok</string>
+    <string name="doYouWantToLogout">Do you want to close app?</string>
+    <string name="errorPhone">Error phone number</string>
+    <string name="contactUs">Contact us</string>
+    <string name="followUs">Follow us on</string>
+    <string name="message">message</string>
+    <string name="send">Send</string>
+    <string name="messageSend">Message sent successfully we will contact with you soon ,thanks</string>
+    <string name="addData">There is no post data ,please add content you want</string>
+    <string name="errorPassword">Error password</string>
+    <string name="youcanotSendMessageToYourSelf">Its your post you canot send message for yourself</string>
+    <string name="TYPE_SATELLITE">SATELLITE</string>
+    <string name="TYPE_TERRAIN">TERRAIN</string>
+    <string name="myLocation">My location</string>
+    <string name="professionLocation">Profession location</string>
+    <string name="sendAttachment">Send attatchment</string>
+    <string name="yoFollowThisUser">You follow this user successfully</string>
+    <string name="noData">There is no data to show</string>
+    <string name="title_activity_profession_location">Map</string>
+    <string name="pleaseSelectCountryCode">Please select country code</string>
+    <string name="isIn">Is in</string>
+    <string name="timeZoneNight">PM</string>
+    <string name="timeZoneMorning">AM</string>
+    <string name="changeExistanceStatus">Change profession status</string>
+    <string name="onlineProfession">My dear professional will now show up on the application application map so that visitors can request the service from you</string>
+    <string name="offlineProfession">Dear professionals, the work of your OffLine account will not appear in the thread application, and visitors will not be able to request the service from you</string>
+    <string name="sendMessage">Send message</string>
+    <string name="kuiwet">Kuwait</string>
+    <string name="pleaseAddLocation">(Please enter your mobile number without the country code)</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="doYouWantToDeleteImage">Do you want to delete this image?</string>
+    <string name="updatePassword">Edit password</string>
+    <string name="oldPass">Old password</string>
+    <string name="newPass">New password</string>
+    <string name="passwordUpdatedSuccessfully">Password updated successfully</string>
+    <string name="errorTryAgain">Error please try again in another time</string>
+    <string name="category">Category</string>
+
+    <string-array name="tabLayoutTitle">
+        <item>Home</item>
+        <item>Profile</item>
+        <item>Guide</item>
+        <item>Chat</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,120 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.shalate.red.shalate"
+        minSdkVersion 19
+        targetSdkVersion 28
+        multiDexEnabled true
+        buildToolsVersion "28.0.3"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+//        ndk {
+//            // config you want to support device
+//            abiFilters 'arm64-v8a', 'armeabi', 'armeabi-v7a', 'x86'
+//        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    dataBinding {
+        enabled true
+    }
+    buildToolsVersion = '28.0.3'
+
+}
+
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:28.0.0'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0-rc01'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    implementation 'com.android.support:cardview-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.intuit.ssp:ssp-android:1.0.5'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'com.hbb20:ccp:2.2.2'
+    implementation 'com.android.support:multidex:1.0.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.amitshekhar.android:android-networking:1.0.1'
+    implementation 'com.amitshekhar.android:jackson-android-networking:1.0.1'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:r2.4.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:r2.4.0'
+//    implementation 'com.henryblue.mxvideoplayer:xvideoplayer:1.2.0'
+    implementation 'com.danikula:videocache:2.7.1'
+//    implementation 'com.henryblue.mxvideoplayer:xvideoplayer:1.2.0'
+//    implementation 'net.the4thdimension:audio-wife:1.0.3'
+    //noinspection GradleCompatible
+    implementation 'com.google.android.gms:play-services-places:15.0.1'
+    implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.ryanjeffreybrooks:indefinitepagerindicator:1.0.10'
+    implementation 'com.github.whinc:ratingbar:1.1.1'
+//    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.1.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.1'
+    implementation 'com.github.clans:fab:1.6.4'
+    ///slide
+    implementation 'com.hbb20:ccp:2.2.3'
+    implementation 'com.github.smarteist:autoimageslider:1.1.1'
+
+    implementation 'com.devlomi.record-view:record-view:2.0.1'
+//  firebase  implementation
+    implementation 'com.github.emrekose26:RecordButton:1.2.4'
+//    implementation 'com.github.safetysystemtechnology:audio-recorder-button:v1.3'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.8'
+    implementation 'com.r0adkll:slidableactivity:2.0.6'
+
+//    implementation 'fm.jiecao:jiecaovideoplayer:5.7'
+    //    compile 'com.teliver.sdk:TeliverSdk:2.0.23'
+    implementation 'com.github.darsh2:MultipleImageSelect:3474549'
+    implementation 'com.google.android.gms:play-services-maps:15.0.1'
+    implementation 'com.google.firebase:firebase-core:16.0.0'
+    implementation 'com.google.firebase:firebase-storage:15.0.0'
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+    implementation 'com.zhihu.android:matisse:0.4.3'
+    implementation 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.1@aar'
+    implementation 'io.reactivex.rxjava2:rxjava:2.0.5'
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    implementation 'com.linsea:universalvideoview:1.1.0@aar'
+    implementation 'com.google.firebase:firebase-messaging:17.0.0'
+    implementation 'com.google.firebase:firebase-database:16.0.1'
+    implementation 'com.github.mukeshsolanki:country-picker-android:1.1.9'
+}
+apply plugin: 'com.google.gms.google-services'

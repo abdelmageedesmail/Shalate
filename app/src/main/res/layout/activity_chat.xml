@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.shalate.red.shalate.Activity.ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/logo" />
+
+            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/not" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layoutDirection="ltr">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvChat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/viewSendBar"
+            android:layout_alignParentTop="true" />
+
+        <FrameLayout
+            android:id="@+id/viewSendBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white">
+
+            <RelativeLayout
+                android:id="@+id/parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/liChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="start"
+                        android:layout_marginLeft="@dimen/_5ssp"
+                        android:layout_marginRight="@dimen/_5ssp"
+                        android:layout_marginBottom="@dimen/_5ssp"
+                        android:layoutDirection="ltr"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_5ssp"
+                        android:textDirection="ltr">
+
+
+                        <ImageView
+                            android:id="@+id/ivSend"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:rotation="180"
+                            app:srcCompat="@drawable/ic_send_black_24dp" />
+
+                        <EditText
+
+                            android:id="@+id/edMessage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginEnd="5dp"
+                            android:background="@drawable/chatbox"
+                            android:gravity="center"
+                            android:hint="@string/write_here"
+                            android:layoutDirection="ltr"
+                            android:maxLines="5"
+                            android:minLines="1"
+
+                            android:textSize="13sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="end|bottom"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/ivcame"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:srcCompat="@drawable/ic_photo_camera_black_24dp" />
+
+                            <ImageView
+                                android:id="@+id/ivAttach"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_toRightOf="@+id/ivcame"
+                                app:srcCompat="@drawable/ic_attach_file_black_24dp" />
+
+                            <ImageView
+                                android:id="@+id/ivVoice"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_toRightOf="@+id/ivAttach"
+                                android:visibility="gone"
+                                app:srcCompat="@drawable/ic_keyboard_voice_black_24dp" />
+
+
+                            <ImageView
+                                android:id="@+id/ivLocation"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/_10ssp"
+                                android:layout_toRightOf="@+id/ivVoice"
+                                app:srcCompat="@drawable/fullmap" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.devlomi.record_view.RecordView
+                    android:id="@+id/record_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@id/record_button"
+                    android:visibility="gone"
+                    app:counter_time_color="#ff0000"
+                    app:slide_to_cancel_arrow="@drawable/recv_ic_arrow"
+                    app:slide_to_cancel_arrow_color="#000000"
+                    app:slide_to_cancel_bounds="8dp"
+                    app:slide_to_cancel_margin_right="10dp"
+                    app:slide_to_cancel_text="Slide To Cancel" />
+
+                <com.devlomi.record_view.RecordButton
+                    android:id="@+id/record_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+
+                    android:background="@drawable/recv_bg_mic"
+                    android:scaleType="centerInside"
+                    app:mic_icon="@drawable/ic_keyboard_voice_black_24dp" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+

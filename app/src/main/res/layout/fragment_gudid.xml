@@ -1,0 +1,60 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/noInternet"
+        layout="@layout/no_intenet"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/liContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/txtcolo"
+        android:orientation="vertical"
+        tools:context="com.shalate.red.shalate.Fragment.GudidFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30sp"
+            android:layout_marginTop="@dimen/_4ssp"
+            android:background="#F2F2F2"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"
+                android:src="@drawable/loc" />
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/transparent"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:textColor="#999999"
+                android:textColorHint="#999999"
+                android:textSize="@dimen/_9ssp" />
+
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/guidRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5ssp"
+            android:focusable="true">
+
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</FrameLayout>

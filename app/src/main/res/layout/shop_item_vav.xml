@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_margin="@dimen/_3ssp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="80dp"
+
+            android:src="@drawable/g1"
+            android:layout_height="80dp" />
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10ssp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@+id/image"
+                android:text="مطعم برجراتك"
+
+                android:textColor="@color/colorPrimaryDark"
+           android:textSize="@dimen/_9ssp" />
+            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                android:id="@+id/des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_centerHorizontal="true"
+                android:text="مصمم جرافيك"
+                android:textColor="#5B5B5B"
+           android:textSize="@dimen/_9ssp" />
+            <com.whinc.widget.ratingbar.RatingBar
+                android:id="@+id/ratingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20ssp"
+                app:rb_max_count="5"
+
+                app:rb_count="5"
+                app:rb_empty="@drawable/emptyy"
+                app:rb_fill="@drawable/startv"
+
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:weightSum="1"
+android:layout_marginTop="@dimen/_3ssp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:gravity="start|center"
+          android:textAlignment="center"
+        android:layout_marginRight="@dimen/_5ssp"
+android:layout_weight="0.2"
+
+       android:layout_gravity="start"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content">
+            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+android:maxWidth="200dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/image"
+                android:layout_centerHorizontal="true"
+                android:text="شارع الخليج العربي مقابل أبراج الكويت
+ الشرق - مدينة الكويت
+ الكويت"
+                android:textColor="#5B5B5B"
+           android:textSize="@dimen/_9ssp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="0.8"
+            android:layoutDirection="rtl"
+            android:gravity="center"
+            android:orientation="horizontal"
+android:weightSum="4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+           <ImageView
+               android:layout_weight="1"
+               android:src="@drawable/one"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content" />
+
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_weight="1"
+                android:src="@drawable/three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginRight="@dimen/_5ssp"
+        android:layout_marginLeft="@dimen/_5ssp"
+        android:layout_marginTop="@dimen/_5ssp"
+        android:background="@drawable/linee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+</LinearLayout>

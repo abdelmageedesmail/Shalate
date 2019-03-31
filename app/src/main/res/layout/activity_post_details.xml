@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/postDetails"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_material_light"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background_material_light"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_3ssp"
+                    android:layout_marginEnd="@dimen/_3ssp"
+                    android:layout_weight=".8">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/prvileImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ph2" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginEnd="7dp"
+                        android:orientation="vertical">
+
+                        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image"
+                            android:layout_centerHorizontal="true"
+                            android:text="ِAhmed Ibraheem "
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_9ssp" />
+
+                        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                            android:id="@+id/des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:text="مصمم جرافيك"
+                            android:textColor="#5B5B5B"
+                            android:textSize="@dimen/_9ssp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvIn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/isIn" />
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="7dp"
+                            android:layout_marginEnd="7dp"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/makeorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="@dimen/_5ssp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/makeorder" />
+
+                    <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_below="@+id/image"
+                        android:layout_centerHorizontal="true"
+                        android:text="متابعة"
+                        android:textColor="#5B5B5B"
+                        android:textSize="@dimen/_9ssp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight=".2"
+                    android:textSize="12sp"
+                    android:textColor="@color/black" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5ssp"
+                android:background="@color/background_material_light">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@drawable/notifications"
+                                android:id="@+id/ivNoImage"
+                                android:visibility="gone" />
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/rvImages"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                            <com.rbrooks.indefinitepagerindicator.IndefinitePagerIndicator
+                                android:id="@+id/recyclerview_pager_indicator"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|bottom"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="7dp"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp"
+                                app:selectedDotColor="@color/greenn" />
+                        </FrameLayout>
+
+                        <com.google.android.exoplayer2.ui.SimpleExoPlayerView
+                            android:layout_width="match_parent"
+                            android:layout_height="266dp"
+                            android:id="@+id/exo_player_view"
+                            android:visibility="gone">
+                        </com.google.android.exoplayer2.ui.SimpleExoPlayerView>
+
+                        <FrameLayout
+                            android:id="@+id/video_layout"
+                            android:layout_width="fill_parent"
+                            android:layout_height="200dp"
+                            android:layout_centerInParent="true"
+                            android:background="@android:color/black"
+                            android:visibility="gone">
+
+                            <com.universalvideoview.UniversalVideoView
+                                android:id="@+id/videoView"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_gravity="center"
+                                app:uvv_autoRotation="true"
+                                app:uvv_fitXY="false" />
+
+                            <com.universalvideoview.UniversalMediaController
+                                android:id="@+id/media_controller"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                app:uvv_scalable="true" />
+
+                        </FrameLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp">
+
+                <ImageView
+                    android:id="@+id/liLike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/h1" />
+
+                <ImageView
+                    android:id="@+id/ivComment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/h2" />
+
+                <ImageView
+                    android:id="@+id/ivChat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/h3" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginEnd="10dp"
+                android:gravity="start|center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/liked" />
+
+                <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                    android:id="@+id/tvLikeCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:gravity="end">
+
+                <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                    android:id="@+id/tvContent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/_10ssp"
+                    android:text="ِAhmed Ibraheem view by the sea "
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/shape_follow"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivProfile"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:padding="7dp"
+                        app:civ_border_color="@color/greenn"
+                        app:civ_border_width="1dp" />
+
+                    <com.shalate.red.shalate.ConstantsFonts.RegularEditText
+                        android:id="@+id/etComment"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/shape_post"
+                        android:hint="@string/commentt" />
+                </LinearLayout>
+
+                <com.shalate.red.shalate.ConstantsFonts.BoldButton
+                    android:id="@+id/btnAdd"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_weight=".5"
+                    android:background="@drawable/green_shap"
+                    android:text="@string/add"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    android:background="@color/background_material_light"
+    tools:context=".Activity.AddPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_chevron_left" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+            <TextView
+                android:id="@+id/tvNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="@string/next"
+                android:textColor="@color/greenn"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/frContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2.9" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_weight=".2"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <com.shalate.red.shalate.ConstantsFonts.RegularTextView
+            android:id="@+id/gallery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/gallary"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <com.shalate.red.shalate.ConstantsFonts.RegularTextView
+            android:id="@+id/tvVideo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/video"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <com.shalate.red.shalate.ConstantsFonts.RegularTextView
+            android:id="@+id/tvCamera"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/camera"
+            android:textColor="#000"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

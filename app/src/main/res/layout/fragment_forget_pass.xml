@@ -1,0 +1,116 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="#272727"
+    tools:context="com.shalate.red.shalate.Fragment.ForgetPassFragment">
+
+    <LinearLayout
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:background="@drawable/lin_shap"
+            android:layout_width="270sp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:src="@drawable/emailnn"
+                android:layout_width="18sp"
+                android:layout_height="18sp" />
+            <com.shalate.red.shalate.ConstantsFonts.RegularEditText
+                android:layout_width="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/emailtogetpass"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:singleLine="true"
+           android:textSize="@dimen/_9ssp"
+                android:textColor="#787878"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/image"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.shalate.red.shalate.ConstantsFonts.BoldButton
+            android:layout_marginTop="@dimen/_8ssp"
+
+            android:background="@drawable/green_shap"
+            android:text="@string/getpaass"
+
+            android:layout_gravity="center"
+            android:layout_width="270sp"
+            android:layout_height="40dp"
+       android:textSize="@dimen/_9ssp"
+            android:textColor="@color/txtcolo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:background="@drawable/lin_shap"
+            android:layout_width="270sp"
+            android:layout_height="40dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:src="@drawable/locnn"
+                android:layout_width="18sp"
+                android:layout_height="18sp" />
+            <com.shalate.red.shalate.ConstantsFonts.RegularEditText
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="@string/loc"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/visibitlity"
+                android:singleLine="true"
+                android:paddingLeft="@dimen/_5ssp"
+           android:textSize="@dimen/_9ssp"
+                android:textColor="#787878"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/image"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <com.shalate.red.shalate.ConstantsFonts.BoldButton
+            android:layout_marginTop="@dimen/_8ssp"
+
+            android:background="@drawable/green_shap"
+            android:text="@string/getpaass"
+
+            android:layout_gravity="center"
+            android:layout_width="270sp"
+            android:layout_height="40dp"
+       android:textSize="@dimen/_9ssp"
+            android:textColor="@color/txtcolo"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/image"
+            />
+
+    </LinearLayout>
+</LinearLayout>

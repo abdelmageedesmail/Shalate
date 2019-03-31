@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "193158758365",
+    "firebase_url": "https://sahlat-ed69d.firebaseio.com",
+    "project_id": "sahlat-ed69d",
+    "storage_bucket": "sahlat-ed69d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:193158758365:android:33e2ec8ab8a6ccac",
+        "android_client_info": {
+          "package_name": "com.shalate.red.shalate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "193158758365-gmgr647alvhk1dl6ob0odh7hij8ka8qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAk7EpCr27nYHjW9_NQ5UghuKCZ8OXtjA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

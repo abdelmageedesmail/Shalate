@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nestedScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="blocksDescendants">
+
+        <include
+            android:id="@+id/noInternet"
+            layout="@layout/no_intenet"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/liContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/prvileImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/ph2" />
+
+                    <LinearLayout
+
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:orientation="vertical">
+
+                        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                            android:id="@+id/name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image"
+                            android:text="ِAhmed Ibraheem "
+
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_9ssp" />
+
+                        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                            android:id="@+id/des"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/image"
+                            android:layout_centerHorizontal="true"
+                            android:text="مصمم جرافيك"
+                            android:textColor="#5B5B5B"
+                            android:textSize="@dimen/_9ssp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:gravity="top|center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_5ssp"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:id="@+id/NumOfPosts"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/_5ssp"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9ssp" />
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:text="@string/posts"
+                                android:textColor="#5B5B5B"
+
+                                android:textSize="@dimen/_9ssp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/liFollowes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:id="@+id/numOfFollowers"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+
+                                android:layout_marginTop="@dimen/_5ssp"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9ssp" />
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:text="@string/followers"
+                                android:textColor="#5B5B5B"
+
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+
+                            android:id="@+id/liFolloweing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="15dp"
+                            android:orientation="vertical">
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:id="@+id/numOfFollowering"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+
+                                android:layout_marginTop="@dimen/_5ssp"
+
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_9ssp" />
+
+                            <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_below="@+id/profile_image"
+                                android:layout_centerHorizontal="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center"
+                                android:text="@string/following"
+                                android:textColor="#5B5B5B"
+
+                                android:textSize="@dimen/_9ssp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="7dp"
+                        android:layout_marginEnd="7dp">
+                        <com.shalate.red.shalate.ConstantsFonts.RegularTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawablePadding="@dimen/_3ssp"
+                            android:text="@string/changeExistanceStatus"
+                            android:textAlignment="center"
+                            android:textColor="#5B5B5B"
+                            android:textSize="10sp" />
+
+                        <Switch
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:id="@+id/switchStatus"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/rvEdit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/green_shap"
+                        android:drawableStart="@drawable/ic_edit_profile"
+                        android:drawablePadding="10dp"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="20dp"
+                        android:text="@string/editProfile"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp">
+
+                <com.shalate.red.shalate.ConstantsFonts.BoldTextView
+                    android:id="@+id/tvDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_centerHorizontal="true"
+                    android:paddingLeft="@dimen/_10ssp"
+                    android:paddingRight="@dimen/_5ssp"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/_9ssp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10ssp"
+                android:layout_marginTop="@dimen/_10ssp"
+                android:layout_marginRight="@dimen/_10ssp"
+                android:visibility="gone">
+
+                <com.shalate.red.shalate.ConstantsFonts.BoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:minWidth="130sp"
+
+                    android:text="رابط الاعمال  "
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/_9ssp" />
+
+                <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="end"
+                    android:linksClickable="true"
+                    android:text="www.youtume.com/AhmedIbrameem"
+                    android:textColor="#5B5B5B"
+                    android:textSize="@dimen/_9ssp" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvNoData"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/photo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:layout_marginEnd="10dp"
+                        android:nestedScrollingEnabled="false" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/rvVideos"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:layout_marginEnd="10dp"
+                        android:nestedScrollingEnabled="false" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+</android.support.v4.widget.NestedScrollView>

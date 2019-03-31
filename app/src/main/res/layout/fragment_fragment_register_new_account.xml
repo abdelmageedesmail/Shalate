@@ -1,0 +1,109 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bglogin"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context="com.shalate.red.shalate.Fragment.FragmentRegisterNewAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:layout_width="18sp"
+            android:layout_height="18sp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/_10ssp"
+            android:src="@drawable/emailnn"
+            android:visibility="gone" />
+
+        <com.shalate.red.shalate.ConstantsFonts.RegularEditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/lin_shap"
+            android:drawableStart="@drawable/emailnn"
+            android:gravity="center"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="#787878"
+            android:textSize="@dimen/_9ssp" />
+
+
+        <com.shalate.red.shalate.ConstantsFonts.RegularEditText
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/lin_shap"
+            android:drawableStart="@drawable/locnn"
+            android:gravity="center"
+            android:hint="@string/passs"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColor="#787878"
+            android:textSize="@dimen/_9ssp" />
+
+
+        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+            android:id="@+id/passwordforget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/getpass"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold" />
+
+        <com.shalate.red.shalate.ConstantsFonts.BoldButton
+            android:id="@+id/btnLogin"
+            android:layout_width="270sp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/image"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/green_shap"
+            android:text="@string/login"
+            android:textColor="@color/txtcolo"
+            android:textSize="@dimen/_9ssp"
+            android:textStyle="bold" />
+
+        <com.shalate.red.shalate.ConstantsFonts.SemiBoldTextView
+            android:id="@+id/registernewAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="15dp"
+            android:text="@string/registernow"
+            android:textColor="#CCCCCC"
+            android:textSize="@dimen/_9ssp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
