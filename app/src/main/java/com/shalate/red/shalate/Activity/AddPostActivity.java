@@ -25,6 +25,7 @@ import java.util.List;
 
 public class AddPostActivity extends AppCompatActivity implements View.OnClickListener {
 
+    /////
     FrameLayout frContainer;
     TextView gallery, tvVideo, tvCamera, tvNext;
     List<Uri> mSelected;
